@@ -9,4 +9,4 @@ kn = knn.Knn(k, learningDataArray)
 predictedLabels = []
 predictedLabels=kn.predict(testDataArray)
 print(predictedLabels)
-
+print(kn.score(testDataArray, predictedLabels))

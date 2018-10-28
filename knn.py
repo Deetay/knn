@@ -27,6 +27,13 @@ class Knn:
             resultlist.append(self.getlabel(neighbors))
         return resultlist
 
+    def score(self, testdata, resultlist):
+
+        count = 0
+        for i in range(len(testdata)):
+            if(testdata[i][4]==resultlist[i]):
+                count=count+1
+        return  float(count)/len(testdata)
 
 
 
