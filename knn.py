@@ -1,6 +1,7 @@
 import collections as col
 import scipy.spatial.distance as sd
 
+
 class Knn:
     def __init__(self, k, learningData):
         self.k = k
@@ -28,7 +29,6 @@ class Knn:
         return resultlist
 
     def score(self, testdata, resultlist):
-
         count = 0
         for i in range(len(testdata)):
             if(testdata[i][4]==resultlist[i]):
